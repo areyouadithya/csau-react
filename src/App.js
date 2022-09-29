@@ -1,7 +1,9 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import Card from './components/Card';
+import Card from './components/Card/Card';
+import TextCard from './components/Card/TextCard';
+import Postform from './components/Postform';
 
 function App() {
   return (
@@ -12,8 +14,11 @@ function App() {
           <Card />
           <Card />
           <Card />
+          <TextCard />
+          <TextCard />
         </div>
       </div>
+      <Postform />
     </div>
   );
 }
