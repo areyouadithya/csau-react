@@ -1,4 +1,8 @@
-function Navbar() {
+function Navbar(props) {
+
+    let {setShowModal} = props;
+    // console.log(setShowModal);
+
     return (
         <div className="navbar">
             <div className="logo">
@@ -23,7 +27,7 @@ function Navbar() {
                     <img src={'send.png'} alt="Send" />
                 </div>
             </div>
-            <button type="button" className="post-btn">
+            <button type="button" className="post-btn" onClick={() => setShowModal(true)}>
                 Add new post
             </button>
         </div>
